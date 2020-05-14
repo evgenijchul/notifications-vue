@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="open()">Open notifications</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+function randomInteger(min, max) {
+  // random number from (min-0.5) to (max+0.5)
+  let rand = min - 0.5 + Math.random() * (max - min + 1);
+  return Math.round(rand);
+}
 
 export default {
   name: "App",
-  components: {
-    HelloWorld
+
+  methods: {
+    open() {
+      fetch("https://jsonplaceholder.typicode.com/posts")
+        .then(response => response.json())
+        .then(json => {
+          let randomString = json[randomInteger(0, json.length - 1)]["title"];
+          this.$notifi.new(randomString);
+        });
+    }
   }
 };
 </script>
