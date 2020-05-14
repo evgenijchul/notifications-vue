@@ -45,11 +45,13 @@ export default {
     }
   },
   beforeMount() {
-    let notificationContainer = this.getContainer();
+
+  },
+  mounted() {    let notificationContainer = this.getContainer();
+    console.log(this.$el);
+    
     notificationContainer.appendChild(this.$el);
     notificationContainer.classList.add("topRight");
-  },
-  mounted() {
     this.isActive = true;
     // Timeout for the animation complete before destroying
     setTimeout(() => {
