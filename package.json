@@ -4,6 +4,11 @@
   "description": "Simple Vue plugin notifications",
   "author": "Evgenij Chulkov",
   "license": "MIT",
+  "private": false,
+  "main": "./dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -65,5 +70,6 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
-  }
+  },
+  "dependencies": {}
 }
