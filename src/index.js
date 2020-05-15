@@ -1,4 +1,4 @@
-import NotifiTemplate from "./Notifi";
+import NotifiTemplate from "@/src/Notifi";
 
 export default {
     install: function (Vue) {
