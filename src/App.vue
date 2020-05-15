@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <button @click="open()">Open notifications</button>
+    <button @click="open()">Open notifications!</button>
   </div>
 </template>
-
 <script>
 function randomInteger(min, max) {
   // random number from (min-0.5) to (max+0.5)
