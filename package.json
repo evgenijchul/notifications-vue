@@ -1,17 +1,23 @@
 {
-  "name": "notifications",
+  "name": "notifications-vue",
   "version": "0.1.0",
-  "private": true,
+  "description": "Simple Vue plugin notifications",
+  "author": "Evgenij Chulkov",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgenijchul/notifications-vue.git"
   },
+  "bugs": {
+    "url": "https://github.com/evgenijchul/notifications-vue/issues"
+  },
+  "homepage": "https://github.com/evgenijchul/notifications-vue#readme",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
