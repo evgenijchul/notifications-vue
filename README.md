@@ -2,7 +2,7 @@
 
 
 ## Setup 
-```
+```console
 npm i notifications-vue
 ```
 ## Project setup
