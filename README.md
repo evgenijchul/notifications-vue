@@ -1,29 +1,13 @@
-# notifications
+# Simple notifications for Vue.js
 
 ## Project setup
 ```
-npm install
-```
+Add in main.js file:
 
-### Compiles and hot-reloads for development
+import NotificationVue from 'notifications-vue'
+Vue.use(NotificationVue);
 ```
-npm run serve
+## Usage
 ```
-
-### Compiles and minifies for production
+this.$notifi.new("Some message");
 ```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

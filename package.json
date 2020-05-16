@@ -1,12 +1,17 @@
 {
   "name": "notifications-vue",
-  "version": "0.1.0",
+  "version": "0.1.42",
   "description": "Simple Vue plugin notifications",
   "author": "Evgenij Chulkov",
   "license": "MIT",
+  "main": "dist/NotivicationsVue.umd.js",
+  "files": [
+    "dist/*.umd*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name NotivicationsVue ./src/VueNotifi/index.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
@@ -65,5 +70,8 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
   }
 }
