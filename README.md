@@ -1,13 +1,18 @@
 # Simple notifications for Vue.js
 
-## Project setup
-```
-Add in main.js file:
 
-import NotificationVue from 'notifications-vue'
-Vue.use(NotificationVue);
+## Setup 
+```
+npm i notifications-vue
+```
+## Project setup
+```javascript
+// Add in main.js file:
+
+import NotificationsVue from 'notifications-vue'
+Vue.use(NotificationsVue);
 ```
 ## Usage
-```
+```javascript
 this.$notifi.new("Some message");
 ```
