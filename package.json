@@ -1,12 +1,12 @@
 {
   "name": "notifications-vue",
-  "version": "0.1.42",
+  "version": "0.1.43",
   "description": "Simple Vue plugin notifications",
   "author": "Evgenij Chulkov",
   "license": "MIT",
-  "main": "dist/NotivicationsVue.umd.js",
+  "main": "dist/NotivicationsVue.umd.min.js",
   "files": [
-    "dist/*.umd*"
+    "dist/*.umd.min*"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",

@@ -71,7 +71,7 @@ export default {
   max-width: 90vw;
   top: 0;
   right: 0;
-  z-index: 50;
+  z-index: 1000;
   margin: 0 8px;
 
   &.topRight {
