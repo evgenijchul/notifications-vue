@@ -16,7 +16,7 @@ export default {
   methods: {
     open() {
 
-this.$notifi.new("randomString");
+      // this.$notifi.new("Some message");
 
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
