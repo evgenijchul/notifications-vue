@@ -1,6 +1,6 @@
 {
   "name": "notifications-vue",
-  "version": "0.1.43",
+  "version": "0.1.5",
   "description": "Simple Vue plugin notifications",
   "author": "Evgenij Chulkov",
   "license": "MIT",
