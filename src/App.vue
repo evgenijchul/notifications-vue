@@ -1,29 +1,33 @@
 <template>
   <div id="app">
-    <button @click="open()">Open notifications!</button>
+    <button @click="open()">Default</button>
+    <button @click="success()">Success</button>
+    <button @click="warning()">Warning</button>
+    <button @click="error()">Error</button>
   </div>
 </template>
 <script>
-function randomInteger(min, max) {
-  // random number from (min-0.5) to (max+0.5)
-  let rand = min - 0.5 + Math.random() * (max - min + 1);
-  return Math.round(rand);
-}
-
 export default {
   name: "App",
-
   methods: {
     open() {
-
-      // this.$notifi.new("Some message");
-
-      fetch("https://jsonplaceholder.typicode.com/posts")
-        .then(response => response.json())
-        .then(json => {
-          let randomString = json[randomInteger(0, json.length - 1)]["title"];
-          this.$notifi.new(randomString);
-        });
+      this.$notifi.new("Default message");
+      // this.$notifi.message("Default message");
+    },
+    success() {
+      this.$notifi.success(
+        "Thanks for contacting us! We will be in touch with you shortly."
+      );
+    },
+    warning() {
+      this.$notifi.warning(
+        "A cookie associated with a cross-site resource at http://googleadservices.com/ was set without the `SameSite` attribute."
+      );
+    },
+    error() {
+      this.$notifi.error(
+        "<b>Error Invalid Number</b>. Please re-send using a valid 10 digit mobile number or valid short code error message."
+      );
     }
   }
 };

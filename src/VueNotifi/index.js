@@ -20,7 +20,19 @@ export default {
         let notifi = [];
         Vue.prototype.$notifi = {
             new: function (message) {
-                return createNotifi({ type: 'primary', message });
+                return createNotifi({ type: 'default', message });
+            },
+            message: function (message) {
+                return createNotifi({ type: 'default', message });
+            },
+            error: function (message) {
+                return createNotifi({ type: 'error', message });
+            },
+            warning: function (message) {
+                return createNotifi({ type: 'warning', message });
+            },
+            success: function (message) {
+                return createNotifi({ type: 'success', message });
             },
         };
     }
