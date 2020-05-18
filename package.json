@@ -8,6 +8,12 @@
   "files": [
     "dist/*.umd.min*"
   ],
+  "keywords": [
+    "vue",
+    "vuejs",
+    "notifications",
+    "notice"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
