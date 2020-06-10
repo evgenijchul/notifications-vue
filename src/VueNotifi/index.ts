@@ -3,11 +3,11 @@ import NotifiTemplate from "./Notifi";
 export default {
     install: function (Vue) {
 
-        function createNotifi({ type, message }) {
+        function createNotifi({ type, message }):void {
 
             let ComponentClass = Vue.extend(NotifiTemplate);
 
-            let newComponent = new ComponentClass({
+            let newComponent:any = new ComponentClass({
                 el: document.createElement("div"),
                 propsData: {
                     type, message
@@ -17,7 +17,7 @@ export default {
         }
 
         // add an instance method
-        let notifi = [];
+        let notifi:[] = [];
         Vue.prototype.$notifi = {
             new: function (message) {
                 return createNotifi({ type: 'default', message });

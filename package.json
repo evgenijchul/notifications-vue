@@ -30,6 +30,11 @@
   },
   "homepage": "https://github.com/evgenijchul/notifications-vue#readme",
   "devDependencies": {
+    "@vue/cli-plugin-typescript": "~4.3.1",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "typescript": "~3.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
     "@vue/cli-plugin-unit-jest": "~4.3.0",
