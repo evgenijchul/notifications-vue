@@ -1,4 +1,5 @@
 import NotifiTemplate from "./Notifi";
+ 
 
 export default {
     install: function (Vue) {
